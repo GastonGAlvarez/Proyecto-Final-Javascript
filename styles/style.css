@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: rgb(192, 175, 81);
+}
+
+h1{
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+h2{
+    margin: 5px auto 30px;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.products-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.products-col{
+    flex: 0 0 20%;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(145, 97, 97);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.product-card input{
+    width: 25%;
+}
+
+img{
+    width: 100%;
+}
+
+.carrito{
+    width: 70%;
+    padding: 40px;
+    display: none;
+    margin: auto;
+    background-color: rgb(175, 166, 166);
+    opacity: 0.8;
+}
+
+.carritoProduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.carroButton{
+    margin: 20px auto 40px;
+    display: block;
+}
+
+.closeCarro{
+    margin: 20px auto 40px;
+    display: block;
+}
+
+.carritoProduct img{
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 800px){
+    .products-col{
+        flex: 0 0 30%;
+    }
+
+    .carritoProduct{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .products-col{
+        flex: 0 0 50%;
+    }
+}
